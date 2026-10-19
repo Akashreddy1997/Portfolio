@@ -26,6 +26,7 @@ export const site = {
   googleSiteVerification: '', // code from Google Search Console → "HTML tag" method (only the content="..." value)
   goatcounter: '', // your GoatCounter code, e.g. 'akashreddy' for akashreddy.goatcounter.com
   cloudflareAnalyticsToken: '', // token from Cloudflare Web Analytics (use GoatCounter OR Cloudflare, one is enough)
+  hiddenRepos: ['Portfolio'], // GitHub repos that should NOT appear in the "Latest on GitHub" section
 };
 
 // Shown as a badge in the hero and in the "At a glance" card.

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { profile } from '../data/profile';
+import { profile, site } from '../data/profile';
 import SectionTitle from './SectionTitle';
 
 // Shows your latest public GitHub repositories automatically (free GitHub API, no key needed).
@@ -21,6 +21,7 @@ export default function GithubRepos() {
         setRepos(
           data
             .filter((r) => !r.fork && !r.name.endsWith('.github.io'))
+            .filter((r) => !site.hiddenRepos.some((name) => name.toLowerCase() === r.name.toLowerCase()))
             .slice(0, 6)
         )
       )
