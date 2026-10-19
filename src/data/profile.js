@@ -10,7 +10,7 @@ export const profile = {
   location: 'Bengaluru, India',
   email: 'akreddy3339@gmail.com',
   linkedin: 'https://www.linkedin.com/in/akash-reddy-35510721b',
-  github: 'https://github.com/Akashreddy1997',
+  github: '', // empty = no GitHub buttons on the site. To show them again: 'https://github.com/Akashreddy1997'
   resumeFile: 'Akash_Reddy_Resume.pdf', // put the PDF in the "public" folder with this name
   // Free key from https://web3forms.com (enter your email there, they mail you the key).
   // Messages from the contact form are delivered to that email. Leave empty to hide the form.
