@@ -1,9 +1,12 @@
-# Builds the site and publishes it to GitHub Pages on every push to main.
+# Builds the site and publishes it to GitHub Pages.
+# Automatic deploy on push is turned OFF for now. It only runs when started manually
+# (GitHub → Actions → Deploy portfolio → Run workflow).
+# To turn automatic deploy back on, remove the "#" from the two "push" lines below.
 name: Deploy portfolio
 
 on:
-  push:
-    branches: [main]
+  # push:
+  #   branches: [main]
   workflow_dispatch:
 
 permissions:
